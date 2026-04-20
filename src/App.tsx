@@ -1,8 +1,20 @@
-import React from 'react'
-import logo from './logo.svg'
-import Teste from './teste'
+import Project from './components/Project'
+import About from './containers/About'
+import Sidebar from './containers/Sidebar'
+import EstiloGlobal, { Container } from './styles'
 
 function App() {
-  return <Teste />
+  return (
+    <>
+      <EstiloGlobal />
+      <Container>
+        <Sidebar />
+        <main>
+          <About />
+          <Project />
+        </main>
+      </Container>
+    </>
+  )
 }
 export default App
