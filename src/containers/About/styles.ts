@@ -1,21 +1,22 @@
 import styled from 'styled-components'
 
 export const GitHubSecao = styled.div`
-  display: flex;
-  gap: 4px;
-  margin-top: 30px;
-  margin-bottom: 54px;
+  margin-top: 32px;
+  margin-bottom: 64px;
+  display: inline-flex;
+
   img {
-    width: 50%;
-    min-width: 0;
-    height: 170px;
-    object-fit: fill;
+    height: 100px;
+    width: 320px;
   }
+
   @media (max-width: 768px) {
     flex-direction: column;
+
     img {
-      height: 150px;
       width: 100%;
+      height: 150px;
+      display: block;
     }
   }
 `

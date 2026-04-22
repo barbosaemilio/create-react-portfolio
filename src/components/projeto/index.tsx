@@ -1,4 +1,4 @@
-import Paragrafo from '../paragrafo'
+import Paragrafo from '../Paragrafo'
 import Title from '../Title'
 
 import { Card, LinkBotao } from './styles'
