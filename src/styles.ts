@@ -12,6 +12,7 @@ const estiloGlobal = createGlobalStyle`
 body {
 padding-top: 80px;
 padding-bottom: 80px;
+background-color: ${(props) => props.theme.corDeFundo};
 
 @media (max-width: 768px) {
   padding-top: 16px;}
@@ -31,10 +32,5 @@ export const Container = styled.div`
   @media (max-width: 768px) {
     max-width: 80%;
     display: block;
-  }
-
-  img {
-    width: 100%;
-    height: auto;
   }
 `
