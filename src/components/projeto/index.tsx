@@ -16,8 +16,8 @@ const Projeto = ({
   description,
   html_url,
   language,
-  stars,
- }: ProjetoProps) => {
+  stars
+}: ProjetoProps) => {
   return (
     <Card>
       <Title>{name}</Title>
