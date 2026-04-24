@@ -3,12 +3,31 @@ import Title from '../Title'
 
 import { Card, LinkBotao } from './styles'
 
-const Projeto = () => {
+interface ProjetoProps {
+  name: string
+  description: string | null
+  html_url: string
+  language: string | null
+  stars: number
+}
+
+const Projeto = ({
+  name,
+  description,
+  html_url,
+  language,
+  stars,
+ }: ProjetoProps) => {
   return (
     <Card>
-      <Title>Projeto Lista de tarefas</Title>
-      <Paragrafo tipo="secundario">Lista de Tarefa com VUE JS.</Paragrafo>
-      <LinkBotao>Vizualizar</LinkBotao>
+      <Title>{name}</Title>
+      <Paragrafo tipo="secundario">{description || 'Sem descrição'}</Paragrafo>
+      {language && (
+        <Paragrafo tipo="secundario">{`🛠 ${language} · ⭐ ${stars}`}</Paragrafo>
+      )}
+      <LinkBotao href={html_url} target="_blank" rel="noopener noreferrer">
+        Visualizar
+      </LinkBotao>
     </Card>
   )
 }
