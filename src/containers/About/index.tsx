@@ -13,8 +13,15 @@ const About = () => (
       profissionalmente.
     </Paragrafo>
     <GitHubSecao>
-      <img src="https://github-readme-stats.vercel.app/api?username=barbosaemilio&show_icons=true&theme=dracula&include_all_commits=true&count_private=true" />
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=barbosaemilio&layout=compact&langs_count=7&theme=dracula" />
+      <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/stats?username=barbosaemilio&theme=dracula"
+        alt="GitHub Stats"
+      />
+
+      <img
+        src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=barbosaemilio&theme=dracula"
+        alt="Linguagens mais usadas"
+      />
     </GitHubSecao>
   </section>
 )
